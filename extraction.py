@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os
 
-def process_image_refined(image_path, output_dir, expected_letters=3):
+def process_image_refined(image_path, output_dir, expected_letters=6):
     # Read the image
     image = cv2.imread(image_path)
 
@@ -47,8 +47,8 @@ def process_image_refined(image_path, output_dir, expected_letters=3):
     return saved_letters
 
 # Example usage
-input_image_path = 'text-extract.jpg'  # Replace with the path to your image
-output_directory = 'output_letters'
+input_image_path = 'text-extract-2.jpg'  # Replace with the path to your image
+output_directory = 'output_letters-2'
 
 # Run the function and get the list of saved letter file paths
 refined_letter_files = process_image_refined(input_image_path, output_directory)
